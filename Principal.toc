@@ -1,0 +1,101 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{Resumen}{xv}{chapter*.2}%
+\contentsline {chapter}{Abstract}{xvii}{chapter*.3}%
+\contentsline {chapter}{\listfigurename }{xxiv}{chapter*.4}%
+\contentsline {chapter}{\listtablename }{xxv}{chapter*.7}%
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Planteamiento del Problema}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Justificación}{9}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Propuesta de Solución}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Subsistema 1: Enjambre de Drones y Estación Base}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Subsistema 2: WSN y el Monitoreo Remoto en Especies en Peligro de Extinción}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Subsistema 3: Integración, Esquemas y Entorno de Visualización}{14}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Objetivos}{21}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Objetivo General}{21}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Objetivos Particulares}{21}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Proyecto Terminal 1}{21}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Proyecto Terminal II}{22}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {6}Alcances}{23}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Estado del Arte}{25}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Marco Teórico}{31}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Especies el Peligro de Extinción}{31}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Métodos Tradicionales de Monitoreo Remoto}{33}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Enjambre de Drones}{34}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Protocolos de Comunicación}{36}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Transceptores}{38}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Red Inalámbrica de Sensores (WSN)}{39}{section.8.6}%
+\contentsline {section}{\numberline {8.7}Esquemas de Recolección}{40}{section.8.7}%
+\contentsline {section}{\numberline {8.8}Estación Base}{41}{section.8.8}%
+\contentsline {section}{\numberline {8.9}Almacenamiento en la Nube}{41}{section.8.9}%
+\contentsline {subsection}{\numberline {8.9.1}Definición y Características del Almacenamiento en la Nube}{41}{subsection.8.9.1}%
+\contentsline {subsection}{\numberline {8.9.2}Modelos de Servicio de Almacenamiento en la Nube}{42}{subsection.8.9.2}%
+\contentsline {subsection}{\numberline {8.9.3}Beneficios y Desafíos del Almacenamiento en la Nube}{43}{subsection.8.9.3}%
+\contentsline {subsection}{\numberline {8.9.4}Servicios y Tecnologías Populares de Almacenamiento en la Nube}{43}{subsection.8.9.4}%
+\contentsline {section}{\numberline {8.10}Bases de Datos Relacionales y No Relacionales}{44}{section.8.10}%
+\contentsline {chapter}{\numberline {9}Análisis}{49}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Análisis de los Sensores}{49}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Comparación de Sensores}{51}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Selección de los Sensores}{63}{subsection.9.1.2}%
+\contentsline {section}{\numberline {9.2}Análisis de la WSN (Red Inalámbrica de Sensores)}{67}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Arquitectura de la WSN:}{67}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Topología de la WSN}{69}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Microprocesador de la WSN}{70}{subsection.9.2.3}%
+\contentsline {subsection}{\numberline {9.2.4}Fuente de Energía de la WSN}{71}{subsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.2.5}Comunicación Inalámbrica de la WSN}{72}{subsection.9.2.5}%
+\contentsline {subsection}{\numberline {9.2.6}Módulo de Almacenamiento de la WSN}{74}{subsection.9.2.6}%
+\contentsline {section}{\numberline {9.3}Análisis de los Drones.}{77}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Tipo de Dron}{78}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Controladora de Vuelo para los Drones}{83}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}GPS del Dron}{84}{subsection.9.3.3}%
+\contentsline {section}{\numberline {9.4}Análisis del Enjambre de Drones}{87}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Microordenador Abordo}{87}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}Lenguaje de Programación del Microordenador}{89}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.3}Comunicación del Enjambre}{90}{subsection.9.4.3}%
+\contentsline {subsection}{\numberline {9.4.4}Tipo de Formación del Enjambre}{91}{subsection.9.4.4}%
+\contentsline {section}{\numberline {9.5}Análisis del Proveedor de Servicios en la Nube.}{93}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Criterios de Selección para el Proveedor de Servicios en la Nube.}{93}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}Selección del Servidor en la Nube.}{95}{subsection.9.5.2}%
+\contentsline {section}{\numberline {9.6}Búsqueda y Vinculación con Otros Proyectos de Investigación y/o Organizaciones.}{99}{section.9.6}%
+\contentsline {section}{\numberline {9.7}Análisis del Animal a Estudiar}{103}{section.9.7}%
+\contentsline {subsection}{\numberline {9.7.1}Elección del Animal a Estudiar}{104}{subsection.9.7.1}%
+\contentsline {subsubsection}{\numberline {9.7.1.1}Características más Importantes del Animal Seleccionado}{105}{subsubsection.9.7.1.1}%
+\contentsline {chapter}{\numberline {10}Dise\~no}{107}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Diseño de la WSN}{107}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Conexión Física de la WSN}{107}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Lenguaje de Programación de la WSN}{109}{subsection.10.1.2}%
+\contentsline {section}{\numberline {10.2}Diseño de los Drones }{111}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Estructura Física}{111}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Fuente de Energía}{111}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}Componentes para Volar el Dron}{112}{subsection.10.2.3}%
+\contentsline {section}{\numberline {10.3}Diseño del Enjambre de Drones}{114}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Arquitectura Física}{114}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Algoritmos de Comunicación}{115}{subsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.3.3}Programación de Rutas}{116}{subsection.10.3.3}%
+\contentsline {section}{\numberline {10.4}Diseño del Dominio en la Nube}{119}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Amazon Cognito}{119}{subsection.10.4.1}%
+\contentsline {subsubsection}{\numberline {10.4.1.1}Grupo de Usuarios}{119}{subsubsection.10.4.1.1}%
+\contentsline {subsubsection}{\numberline {10.4.1.2}Grupos de Identidades}{120}{subsubsection.10.4.1.2}%
+\contentsline {subsubsection}{\numberline {10.4.1.3}Control de Acceso con Base en Roles}{122}{subsubsection.10.4.1.3}%
+\contentsline {subsection}{\numberline {10.4.2}AWS Identity and Access Management}{122}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}Amazon Lambda}{123}{subsection.10.4.3}%
+\contentsline {subsection}{\numberline {10.4.4}Amazon Simple Storage Service (Amazon S3)}{123}{subsection.10.4.4}%
+\contentsline {subsection}{\numberline {10.4.5}Amazon DynamoDB}{124}{subsection.10.4.5}%
+\contentsline {subsection}{\numberline {10.4.6}Amazon QuickSight}{126}{subsection.10.4.6}%
+\contentsline {section}{\numberline {10.5}Creación del Dominio en la Nube}{129}{section.10.5}%
+\contentsline {chapter}{\numberline {11}Implementación del sistema}{131}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Implementación de los drones}{131}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Implementación de la WSN}{150}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Adquisición de los Elementos}{150}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Funcionamiento de los Elementos}{153}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.3}Integración de los Elementos}{163}{subsection.11.2.3}%
+\contentsline {section}{\numberline {11.3}Modelado del consumo energético del sistema}{176}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Variables del sistema}{177}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}Estados del sistema}{178}{subsection.11.3.2}%
+\contentsline {subsection}{\numberline {11.3.3}Implementación y resultados del sistema}{182}{subsection.11.3.3}%
+\contentsline {section}{\numberline {11.4}Creación de la página Web}{194}{section.11.4}%
+\contentsline {chapter}{\numberline {12}Resultados}{199}{chapter.12}%
+\contentsline {subsection}{\numberline {12.0.1}Pruebas en Simulación}{199}{subsection.12.0.1}%
+\contentsline {subsection}{\numberline {12.0.2}Esquema de vuelo: Enjambre de Drones.}{202}{subsection.12.0.2}%
+\contentsline {subsection}{\numberline {12.0.3}Esquema de Vuelo: Un Solo Dron.}{204}{subsection.12.0.3}%
+\contentsline {chapter}{\numberline {13}Cronograma}{207}{chapter.13}%
+\contentsline {chapter}{\numberline {14}Escenario de Pruebas}{209}{chapter.14}%

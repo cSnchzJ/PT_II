@@ -1,0 +1,192 @@
+\babel@toc {spanish}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Ejemplos de especies en peligro de extinción.}}{10}{figure.caption.9}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diseño y arquitectura del sistema de tres drones coordinados.}}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ejemplos de tipos de collares de seguimiento de animales.}}{14}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Funcionamiento del sistema.}}{15}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Primer esquema de recolección (enjambre separado).}}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Segundo esquema de recolección (enjambre en conjunto).}}{16}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Arquitectura de propuesta para el almacenamiento y procesamiento de datos.}}{19}{figure.caption.15}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Ejemplos del uso de UAVs para el monitoreo de especies en peligro de extinción y/o de su hábitat.}}{27}{figure.caption.16}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Categorías de conservación de la IUCN.}}{32}{figure.caption.20}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Termistor LM35.}}{63}{figure.caption.24}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Módulo GPS Neo-6M.}}{64}{figure.caption.25}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Módulo GPS Neo-6M.}}{65}{figure.caption.26}%
+\contentsline {figure}{\numberline {9.4}{\ignorespaces Venado de cola blanca}}{106}{figure.caption.30}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Diseño de la WSN.}}{109}{figure.caption.31}%
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Diseño del dron.}}{113}{figure.caption.32}%
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Logo de Mission Planner.}}{117}{figure.caption.33}%
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Diseño del enjambre de drones.}}{118}{figure.caption.34}%
+\contentsline {figure}{\numberline {10.5}{\ignorespaces Grupo de Usuarios de Amazon Cognito diagrama de funcionamiento}}{120}{figure.caption.35}%
+\contentsline {figure}{\numberline {10.6}{\ignorespaces Grupo de Usuarios de Amazon Cognito diagrama de funcionamiento}}{121}{figure.caption.36}%
+\contentsline {figure}{\numberline {10.7}{\ignorespaces Traslado de los datos a Amazon S3, administración de los datos almacenados en Amazon S3 y análisis de los datos con otros servicios de AWS. }}{124}{figure.caption.37}%
+\contentsline {figure}{\numberline {10.8}{\ignorespaces Características principales de Amazon DynamoDB y las integraciones con otros servicios de AWS}}{125}{figure.caption.38}%
+\contentsline {figure}{\numberline {10.9}{\ignorespaces Diagrama de bloques de los servicios que se consideran para el desarrollo del proyecto.}}{127}{figure.caption.39}%
+\contentsline {figure}{\numberline {10.10}{\ignorespaces Características del dominio en la nube.}}{129}{figure.caption.40}%
+\contentsline {figure}{\numberline {10.11}{\ignorespaces Visualización de la página principal al iniciar sesión en AWS}}{130}{figure.caption.41}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Componentes del Kit S500.}}{132}{figure.caption.42}%
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Base para el tren de aterrizaje.}}{133}{figure.caption.43}%
+\contentsline {figure}{\numberline {11.3}{\ignorespaces Chasis montado sobre el tren de aterrizaje.}}{133}{figure.caption.44}%
+\contentsline {figure}{\numberline {11.4}{\ignorespaces Base con 4 brazos para el armado de la placa superior.}}{134}{figure.caption.45}%
+\contentsline {figure}{\numberline {11.5}{\ignorespaces Sentido de giro de los motores.}}{135}{figure.caption.46}%
+\contentsline {figure}{\numberline {11.6}{\ignorespaces Componentes de la parte de potencia del dron.}}{135}{figure.caption.47}%
+\contentsline {figure}{\numberline {11.7}{\ignorespaces Placa superior con las ESC montadas y sin brazos.}}{136}{figure.caption.48}%
+\contentsline {figure}{\numberline {11.8}{\ignorespaces Placa superior con los motores montados.}}{137}{figure.caption.49}%
+\contentsline {figure}{\numberline {11.9}{\ignorespaces Montaje de la placa superior sobre la placa base (por partes).}}{137}{figure.caption.50}%
+\contentsline {figure}{\numberline {11.10}{\ignorespaces Montaje de la placa superior sobre la placa base (armada).}}{138}{figure.caption.51}%
+\contentsline {figure}{\numberline {11.11}{\ignorespaces Montaje de la computadora de vuelo sobre la placa superior.}}{138}{figure.caption.52}%
+\contentsline {figure}{\numberline {11.12}{\ignorespaces Montaje del GPS de vuelo sobre la placa superior.}}{139}{figure.caption.53}%
+\contentsline {figure}{\numberline {11.13}{\ignorespaces Diagrama de conexiones de la computadora de vuelo Pixhawk 2.4.8}}{140}{figure.caption.54}%
+\contentsline {figure}{\numberline {11.14}{\ignorespaces Conexiones sobre la computadora de vuelo.}}{141}{figure.caption.55}%
+\contentsline {figure}{\numberline {11.15}{\ignorespaces Montaje de la Raspberry Pi4 sobre la placa superior.}}{142}{figure.caption.56}%
+\contentsline {figure}{\numberline {11.16}{\ignorespaces Características de la telemetría NRF24L01.}}{143}{figure.caption.57}%
+\contentsline {figure}{\numberline {11.17}{\ignorespaces Canalización de Control en Drones Multirrotores.}}{144}{figure.caption.58}%
+\contentsline {figure}{\numberline {11.18}{\ignorespaces Transmisor Radio Controlado.}}{146}{figure.caption.59}%
+\contentsline {figure}{\numberline {11.19}{\ignorespaces Montaje de la batería 5000mAh 6 celdas 22.2v 25C-60C RC sobre la placa inferior.}}{147}{figure.caption.61}%
+\contentsline {figure}{\numberline {11.20}{\ignorespaces Dron listo para pruebas de vuelo.}}{147}{figure.caption.62}%
+\contentsline {figure}{\numberline {11.21}{\ignorespaces Transmisores de Radio Control para cada dron .}}{148}{figure.caption.63}%
+\contentsline {figure}{\numberline {11.22}{\ignorespaces Drones listos para pruebas de vuelo.}}{148}{figure.caption.64}%
+\contentsline {figure}{\numberline {11.23}{\ignorespaces Diagrama de flujo para el vuelo en enjambre.}}{150}{figure.caption.65}%
+\contentsline {figure}{\numberline {11.24}{\ignorespaces Elementos adquiridos para la WSN.}}{153}{figure.caption.68}%
+\contentsline {figure}{\numberline {11.25}{\ignorespaces Prueba del led interno de Arduino Pro Micro.}}{154}{figure.caption.69}%
+\contentsline {figure}{\numberline {11.26}{\ignorespaces Resultado de registrar la temperatura del termistor LM35.}}{155}{figure.caption.70}%
+\contentsline {figure}{\numberline {11.27}{\ignorespaces Prueba del termistor LM35 usando el Arduino Pro Micro.}}{155}{figure.caption.71}%
+\contentsline {figure}{\numberline {11.28}{\ignorespaces Resultado de obtener las coordenadas y la hora mediante el GPS-6M.}}{157}{figure.caption.72}%
+\contentsline {figure}{\numberline {11.29}{\ignorespaces Prueba del GPS-6M.}}{157}{figure.caption.73}%
+\contentsline {figure}{\numberline {11.30}{\ignorespaces Prueba de la cámara trampa PR-700.}}{158}{figure.caption.74}%
+\contentsline {figure}{\numberline {11.31}{\ignorespaces Resultado de transmitir y recibir mediante los transceptores LoRa.}}{159}{figure.caption.75}%
+\contentsline {figure}{\numberline {11.32}{\ignorespaces Prueba de los módulos LoRa usando Arduinos Pro Micro.}}{160}{figure.caption.76}%
+\contentsline {figure}{\numberline {11.33}{\ignorespaces Resultado de las funciones disponibles del adaptador MicroSD.}}{161}{figure.caption.77}%
+\contentsline {figure}{\numberline {11.34}{\ignorespaces Prueba del adaptador MicroSD usando el Arduino Pro Micro.}}{162}{figure.caption.78}%
+\contentsline {figure}{\numberline {11.35}{\ignorespaces Prueba de la batería LiPo para energizar el Arduino Pro Micro.}}{162}{figure.caption.79}%
+\contentsline {figure}{\numberline {11.36}{\ignorespaces Resultados de guardar la temperatura en la memoria MicroSD.}}{164}{figure.caption.80}%
+\contentsline {figure}{\numberline {11.37}{\ignorespaces Integración del termistor y el módulo adaptador MicroSD.}}{164}{figure.caption.81}%
+\contentsline {figure}{\numberline {11.38}{\ignorespaces Resultados de guardar las coordenadas GPS en la memoria MicroSD.}}{165}{figure.caption.82}%
+\contentsline {figure}{\numberline {11.39}{\ignorespaces Integración del GPS y el módulo adaptador MicroSD.}}{165}{figure.caption.83}%
+\contentsline {figure}{\numberline {11.40}{\ignorespaces Resultados de transmitir el archivo txt de la memoria MicroSD usando LoRa.}}{167}{figure.caption.85}%
+\contentsline {figure}{\numberline {11.41}{\ignorespaces Integración del módulo adaptador MicroSD y el transceptor LoRa.}}{167}{figure.caption.86}%
+\contentsline {figure}{\numberline {11.42}{\ignorespaces Resultados de guardar las coordenadas en un archivo txt en la memoria MicroSD y trasmitirlo usando LoRa.}}{169}{figure.caption.87}%
+\contentsline {figure}{\numberline {11.43}{\ignorespaces Integración del GPS, el módulo adaptador MicroSD y el transceptor LoRa.}}{169}{figure.caption.88}%
+\contentsline {figure}{\numberline {11.44}{\ignorespaces Resultados de recibir las coordenadas usando LoRa, guardarlo en un archivo txt en la memoria MicroSD y recolectar datos de temperatura a la par.}}{171}{figure.caption.89}%
+\contentsline {figure}{\numberline {11.45}{\ignorespaces Integración del GPS, el termistor, el módulo adaptador MicroSD y el transceptor LoRa.}}{171}{figure.caption.90}%
+\contentsline {figure}{\numberline {11.46}{\ignorespaces Resultados de recibir las coordenadas usando LoRa, recolectar datos de temperatura y transmitir estos archivos txt.}}{174}{figure.caption.92}%
+\contentsline {figure}{\numberline {11.47}{\ignorespaces Integración del GPS, el termistor, el módulo adaptador MicroSD y el transceptor LoRa.}}{174}{figure.caption.93}%
+\contentsline {figure}{\numberline {11.48}{\ignorespaces Diagrama de estados principal del MMPP implementado.}}{177}{figure.caption.94}%
+\contentsline {figure}{\numberline {11.49}{\ignorespaces Diagrama de estados secundario del MMPP implementado.}}{177}{figure.caption.95}%
+\contentsline {figure}{\numberline {11.50}{\ignorespaces Resultado de una simulación de la etapa 1 de la implementación del MMPP.}}{184}{figure.caption.96}%
+\contentsline {figure}{\numberline {11.51}{\ignorespaces Resultado de varias simulaciones de la etapa 1 de la implementación del MMPP.}}{184}{figure.caption.97}%
+\contentsline {figure}{\numberline {11.52}{\ignorespaces Resultados gráficos de varias simulaciones de la etapa 1 de la implementación del MMPP.}}{184}{figure.caption.98}%
+\contentsline {figure}{\numberline {11.53}{\ignorespaces Resultado de una simulación de la etapa 2 de la implementación del MMPP.}}{185}{figure.caption.99}%
+\contentsline {figure}{\numberline {11.54}{\ignorespaces Resultado de varias simulaciones de la etapa 2 de la implementación del MMPP.}}{185}{figure.caption.100}%
+\contentsline {figure}{\numberline {11.55}{\ignorespaces Resultados gráficos de varias simulaciones de la etapa 2 de la implementación del MMPP.}}{186}{figure.caption.101}%
+\contentsline {figure}{\numberline {11.56}{\ignorespaces Resultado de una simulación de la etapa 3 de la implementación del MMPP.}}{187}{figure.caption.102}%
+\contentsline {figure}{\numberline {11.57}{\ignorespaces Resultado de varias simulaciones de la etapa 3 de la implementación del MMPP.}}{187}{figure.caption.103}%
+\contentsline {figure}{\numberline {11.58}{\ignorespaces Resultados gráficos de varias simulaciones de la etapa 3 de la implementación del MMPP.}}{188}{figure.caption.105}%
+\contentsline {figure}{\numberline {11.59}{\ignorespaces Resultado de una simulación de la etapa 4 de la implementación del MMPP.}}{189}{figure.caption.106}%
+\contentsline {figure}{\numberline {11.60}{\ignorespaces Resultado de varias simulaciones de la etapa 4 de la implementación del MMPP.}}{189}{figure.caption.107}%
+\contentsline {figure}{\numberline {11.61}{\ignorespaces Resultados gráficos de varias simulaciones de la etapa 4 de la implementación del MMPP.}}{190}{figure.caption.108}%
+\contentsline {figure}{\numberline {11.62}{\ignorespaces Resultado de una simulación de la etapa 5 de la implementación del MMPP.}}{190}{figure.caption.109}%
+\contentsline {figure}{\numberline {11.63}{\ignorespaces Resultado de varias simulaciones de la etapa 5 de la implementación del MMPP.}}{191}{figure.caption.110}%
+\contentsline {figure}{\numberline {11.64}{\ignorespaces Resultados gráficos de varias simulaciones de la etapa 4 de la implementación del MMPP.}}{191}{figure.caption.111}%
+\contentsline {figure}{\numberline {11.65}{\ignorespaces Diferentes vistas del gráfico de superficie $E_{\text {max}}$ vs $N_{\text {max}}$.}}{192}{figure.caption.112}%
+\contentsline {figure}{\numberline {11.66}{\ignorespaces Diferentes vistas del gráfico de superficie $E_{\text {on}}$ vs $E_{\text {sleep}}$.}}{193}{figure.caption.113}%
+\contentsline {figure}{\numberline {11.67}{\ignorespaces Diagrama de arquitectura del subsistema de almacenamiento.}}{194}{figure.caption.114}%
+\contentsline {figure}{\numberline {11.68}{\ignorespaces Creación de los usuarios administradores.}}{195}{figure.caption.115}%
+\contentsline {figure}{\numberline {11.69}{\ignorespaces Configuración por usuario y contraseña.}}{195}{figure.caption.116}%
+\contentsline {figure}{\numberline {11.70}{\ignorespaces Configuración del servicio de almacenamiento.}}{195}{figure.caption.117}%
+\contentsline {figure}{\numberline {11.71}{\ignorespaces Creación de funciones Lambda.}}{196}{figure.caption.118}%
+\contentsline {figure}{\numberline {11.72}{\ignorespaces Creación del GraphQL.}}{196}{figure.caption.119}%
+\contentsline {figure}{\numberline {11.73}{\ignorespaces Archivos que se crearán.}}{196}{figure.caption.120}%
+\contentsline {figure}{\numberline {11.74}{\ignorespaces Opciones para creación automatizada de código.}}{196}{figure.caption.121}%
+\contentsline {figure}{\numberline {11.75}{\ignorespaces Inicio de sesión.}}{197}{figure.caption.122}%
+\contentsline {figure}{\numberline {11.76}{\ignorespaces Pestaña de Inicio.}}{197}{figure.caption.123}%
+\contentsline {figure}{\numberline {11.77}{\ignorespaces Pestaña de Visualización de archivos.}}{197}{figure.caption.124}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {12.1}{\ignorespaces Misión de vuelo en el campo de UPIITA-UPIBI}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Individualmente.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Mástil.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {c}{\ignorespaces {) Montado.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Individualmente.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Con batería de 3000mAh.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {c}{\ignorespaces {) Montada con su batería.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Individualmente.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Montada.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Arduino Pro Micro.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Termistor LM35.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {c}{\ignorespaces {) GPS Neo-6M.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {d}{\ignorespaces {) Transceptor LoRa.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {e}{\ignorespaces {) Batería LiPo de 3.7V.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {f}{\ignorespaces {) Cámara PR-700.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Usando el Arduino UNO.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Usando el Arduino Pro Micro.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {Transmisor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {Receptor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Transmisor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Receptor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Escribir en el archivo.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Leer el archivo.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {c}{\ignorespaces {) Borrar el archivo.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {d}{\ignorespaces {) Salir del programa.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Monitor Serial.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Archivo de texto.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Monitor Serial.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Archivo de texto.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Escribir en el archivo.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Transmitir el archivo.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {c}{\ignorespaces {) Leer el archivo.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {d}{\ignorespaces {) Archivo de texto recibido.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Transmisor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Receptor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Transmisor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Receptor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Transmisor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Receptor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Monitor serial.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Archivos generados.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Transmisor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Receptor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Monitor serial.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Archivos generados.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Transmisor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Receptor.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Gráfico de dispersión.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Histograma.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Gráfico de dispersión.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Histograma.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Gráfico de dispersión del número de nodos.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Histograma del número de nodos.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {c}{\ignorespaces {) Gráfico de dispersión de la probabilidad.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {d}{\ignorespaces {) Histograma de la probabilidad.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Gráfico de dispersión.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Histograma.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {a}{\ignorespaces {) Gráfico de dispersión.}}}{200}{figure.caption.125}%
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {) Histograma.}}}{200}{figure.caption.125}%
+\contentsline {figure}{\numberline {12.2}{\ignorespaces Características de la misión de vuelo.}}{200}{figure.caption.126}%
+\contentsline {figure}{\numberline {12.3}{\ignorespaces Pantalla de Vuelo del Dron en el Software de Mission Planner.}}{201}{figure.caption.127}%
+\contentsline {figure}{\numberline {12.4}{\ignorespaces Oscilograma de la corriente del dron líder.}}{202}{figure.caption.128}%
+\contentsline {figure}{\numberline {12.5}{\ignorespaces Oscilograma de la corriente del Dron 2.}}{203}{figure.caption.129}%
+\contentsline {figure}{\numberline {12.6}{\ignorespaces Oscilograma de la corriente del Dron 3.}}{203}{figure.caption.129}%
+\contentsline {figure}{\numberline {12.7}{\ignorespaces Misión de vuelo Dron 1.}}{204}{figure.caption.130}%
+\contentsline {figure}{\numberline {12.8}{\ignorespaces Misión de vuelo Dron 2.}}{204}{figure.caption.130}%
+\contentsline {figure}{\numberline {12.9}{\ignorespaces Misión de vuelo Dron 3.}}{204}{figure.caption.130}%
+\contentsline {figure}{\numberline {12.10}{\ignorespaces Misiones de vuelo de los Drones 1, 2 y 3.}}{204}{figure.caption.130}%
+\contentsline {figure}{\numberline {12.11}{\ignorespaces Oscilograma de misión de vuelo Dron 1.}}{205}{figure.caption.131}%
+\contentsline {figure}{\numberline {12.12}{\ignorespaces Oscilograma de misión de vuelo Dron 2.}}{205}{figure.caption.131}%
+\contentsline {figure}{\numberline {12.13}{\ignorespaces Oscilograma de misión de vuelo Dron 3.}}{206}{figure.caption.132}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {14.1}{\ignorespaces Escenario de pruebas finales del subsistema enjambre en el campo UPIITA-UPIBI.}}{211}{figure.caption.134}%
+\contentsline {figure}{\numberline {14.2}{\ignorespaces Escenario de pruebas finales del subsistema WSN en el campo UPIITA-UPIBI.}}{211}{figure.caption.135}%
+\contentsline {figure}{\numberline {14.3}{\ignorespaces Escenario de pruebas finales del sistema integral en el campo UPIITA-UPIBI.}}{212}{figure.caption.136}%
