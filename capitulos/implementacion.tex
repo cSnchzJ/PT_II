@@ -366,6 +366,383 @@ Esta computadora externa al ser montada en el dron, se alimenta independientemen
 \end{figure}
 
 
+\subsection{Configuración de los Drones.}
+Para configurar los drones se hacen una serie de pasos para calibrar y corroborar que los componentes funcionen. Para comenzar, conectaremos nuestra computadora de vuelo directamente a nuestra computadora o por telemetría.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{imagenes/pixhawk}
+	\caption{Conexión de la Computadora devuelvo a la computadora por cable.}
+	\label{fig:pixhawk}
+\end{figure}
+
+\subsubsection{Calibración de la brújula. (Compass Calibration)}
+
+Dentro de las configuraciones más importantes y que siempre hacemos antes de empezar un vuelo, calibramos la brújula. Una vez conectada nuestra telemetría a nuestra computadora, abriremos el software “Mission Planner” para configurar la brújula siguiendo los siguientes pasos:
+
+ En la pestaña \textit{Setup} \textrightarrow \textit{Mandatory Hardware} \textrightarrow \textit{Compass}, nos aparecerá la siguiente ventana.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{imagenes/compass}
+	\caption{Calibración de la brújula}
+	\label{fig:compass}
+\end{figure}
+
+Observaremos que contamos con barrios GPS en nuestra ventana, es importante tener en cuenta que le debemos dar prioridad a nuestro GPS externo que lo marcaremos con la casilla de “External”, nuestra computadora de vuelo también incluye un GPS, así que ese dispositivo también sa calibrará con estos pasos.
+Como nota, el Dron debe no estar armado y no se debe calibrar cerca de algún dispositivo electrónico ni metálico, ya que puede afectar la forma de calibración del GPS.
+
+Continuando con la calibración, al dar click en el botón Start dentro de la sección de “On board Mag Calibration” y se debe mover el Dron en los 360°, dando vueltas, moviéndolo de izquierda a derecha, poniéndolo de cabeza y en todas las direcciones posibles.
+A medida que se gira el vehículo, las barras verdes deben extenderse cada vez más hacia la derecha hasta que se complete la calibración.
+Una vez finalizado con éxito, se emitirán tres tonos ascendentes y aparecerá una ventana de "Reinicie el piloto automático" y deberá reiniciar el auto Pilot antes de que sea posible armar el vehículo
+
+
+\subsubsection{Calibración del acelerómetro (Accel Calibration).}
+
+Los acelerómetros del Dron deben calibrarse para corregir sus desplazamientos de polarización en los tres ejes (Pitch, Yaw y Roll). La calibración del acelerómetro es obligatoria en ArduPilot y la calibración no se puede realizar mientras el vehículo está armado.
+Nos dirigimos a la calibración del acelerómetro siguiendo las siguientes rutas:
+
+En la pestaña \textit{Setup} \textrightarrow \textit{Mandatory Hardware}\textrightarrow \textit{Accel Calibration}, nos aparecerá la siguiente ventana.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{imagenes/accel}
+	\caption{Ventana de Calibración del acelerómetro.}
+	\label{fig:accel}
+\end{figure}
+\newpage
+Deberemos hacer click en la primera opción, seguido de eso, el propio software, nos indicará las posiciones en las que debemos colocar el Dron, las posiciones son:
+
+\begin{itemize}
+	\item Level. \textit{(En el nivel del suelo)}.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\linewidth]{imagenes/conf1}
+		\caption{}
+		\label{fig:conf1}
+	\end{figure}
+	
+	\item Left. \textit{(Izquierda)}.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\linewidth]{imagenes/conf2}
+		\caption{}
+		\label{fig:conf1}
+	\end{figure}
+	
+	\item Right. \textit{(Derecha).}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\linewidth]{imagenes/conf3}
+		\caption{}
+		\label{fig:conf1}
+	\end{figure}
+	
+	\item Nose Down. \textit{(Con la parte frontal del Dron mirando hacia abajo).}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\linewidth]{imagenes/conf4}
+		\caption{}
+		\label{fig:conf1}
+	\end{figure}
+	
+	\item Nose Up.\textit{ (Con la parte frontal del Dron mirando hacia arria).}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\linewidth]{imagenes/conf5}
+		\caption{}
+		\label{fig:conf1}
+	\end{figure}
+	
+	\item Back. \textit{(Con la parte superior del Dron mirando hacia abajo).}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\linewidth]{imagenes/conf6}
+		\caption{}
+		\label{fig:conf1}
+	\end{figure}
+	
+	
+\end{itemize}
+
+El Dron debe mantenerse quieto inmediatamente después de presionar la tecla para cada posición. Esto es más importante que conseguir el ángulo exacto, es decir  a la izquierda a 90 grados a horizontal exactamente, etc. A excepción del primer "NIVEL", las posiciones pueden estar dentro de los 20 grados (por inclinación del suelo) de ser exactas. Se debe estar quieto en cada posición mientras presionamos la tecla de aceptar.
+La posición de nivel es la más importante de todas para la calibración, ya que esta será la posición que el Dron considere nivelada mientras vuela.
+
+\subsubsection{Configuración del Control.}
+
+Los controles transmisores nos permiten configurar el modo de vuelo, controlar el movimiento y la orientación del vehículo y también activar y desactivar las funciones auxiliares (es decir, subir y bajar el tren de aterrizaje, etc.) de las cuales hablaremos más adelante.
+
+La calibración del control implica la captura de los valores mínimos, máximos y de "ajuste" de cada canal para que ArduPilot pueda interpretar correctamente la entrada.
+
+Antes de comenzar, hay que asegurarnos de que el control tenga una batería con carga, al momento de encender el control verificar que esté en “Auto” y que las lengüetas del control se encuentren totalmente levantadas..
+
+Para abrir el menú de configuración, nos dirigiremos a:
+\textit{Setup} \textrightarrow \textit{ Mandatory Hardware} \textrightarrow \textit{Radio Calibration}, nos aparecerá la siguiente ventana.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{imagenes/radioCont}
+	\caption{Menú de calibración del Radio Control}
+	\label{fig:radiocont}
+\end{figure}
+
+Al colocarnos en esta pestaña, debemos ver que hay barras verdes, si no se encuentran esas barras verdes, hay que verificar el Radio Control.
+En esta ventana comprobaremos el mapeo de los canales de transmisión, también las perillas, palancas e interruptores de nuestro control, lo comprobaremos al presionar los botones y mover las palancas, las barras verdes se empezarán a desplazar
+Para la calibración del control, pulsaremos el botón de “Calibrate Radio”, presionamos el botón de “Ok” cuando se solicite verificar que el equipo de control del radio esté encendido y las hélices no están conectadas.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{imagenes/contrCheck}
+	\caption{Calibración del Radio Control.}
+	\label{fig:contrcheck}
+\end{figure}
+
+Hacer click cuando hayamos terminado. Acabando de configurar, Mission Planner nos mostrará un resumen de los datos calibrados, los valores comunes rondan entre los 1100 para los mínimos y 1900 para los valores máximos.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{imagenes/rangos}
+	\caption{Valores Rango de los controles.}
+	\label{fig:rangos}
+\end{figure}
+
+\subsubsection{Verificación del giro de los motores.}
+
+Es importante verificar la dirección de los motores, porque en caso de que algún motor y propela estén en el sentido contrario, el Dron será incapaz de volar y puede provocar algún tipo de accidente.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{imagenes/pixhawkIn}
+	\caption{Pines de salida Pixhawk (numerados).}
+	\label{fig:pixhawkin}
+\end{figure} 
+
+Conectamos los cables de alimentación (+), tierra (-) y señal (s) de cada ESC a los pines de salida principales del Dron por número de motor.
+
+Para dirigirnos a la pestaña de:
+\textit{Option}\textrightarrow\textit{ Optional Hardware}\textrightarrow \textit{Motor test}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.89\linewidth]{imagenes/motorTest}
+	\caption{Pruebas de Motor.}
+	\label{fig:motortest}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\linewidth]{imagenes/quadX}
+	\caption{Sentido y dirección de los motores con la punta como nuestro norte de nuestro GPS.}
+	\label{fig:quadX}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{imagenes/sense}
+	\caption{Leyenda para diagramas de orden de motores.}
+	\label{fig:sense}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{imagenes/sense2}
+	\caption{Sentido de las propelas en sentido horario y antihorario}
+	\label{fig:sense2}
+\end{figure}
+
+La forma de comprobar que todo esté correcto es dirigirnos la pestaña de pruebas de motores y probar los 4 motores, sabremos que está bien el sentido porque el aire de impulso se sentirá en la parte de abajo del Dron, en caso de que el aire se sienta en la parte de arriba, habrá que corregir el sentido. Puede que al momento de probar el motor se pueda “atascar” o no poder girar, para solucionar el problema es de ayuda subirle el porcentaje de potencia en la misma ventana (\textit{Throttle}).
+
+\subsubsection{Calibración de las controladoras de vuelo (ESC Calibration)}
+
+Las controladoras de vuelo son las encargadas de hacer girar a los motores a la velocidad solicitada para el Dron, la mayoría de las ESC necesitan ser calibradas para que reconozcan los valores mínimos y máximos de los PWM.
+
+Para la correcta calibración,se debe quitar las propelas del Dron, a continuación, pulsamos el botón de “Calibrate ESCs”, después, y colocar el control en su punto máximo de Pitch y el Dron debe estar con la batería conectada.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{imagenes/ctr1}
+	\caption{Representación del control con el Throttle al máximo.}
+	\label{fig:ctr1}
+\end{figure}
+
+Después de presionar el botón que da comienzo a la calibración, desconectamos la batería y volveremos a conectar inmediatamente hasta escuchar los pitidos de confirmación de calibración, cuando escuchemos los pitidos de confirmación, bajaremos la palanca y se procede a la captura del punto mínimo.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{imagenes/ctr2}
+	\caption{Representación del control con el Throttle al mínimo.}
+	\label{fig:ctr2}
+\end{figure}
+
+Se escucharán los pitidos de confirmación de la calibración. Al terminar, se escuchará un pitido largo.
+Para salir del modo de calibración de la controladora de vuelo, únicamente se desconecta la batería y se vuelve a conectar, esto hará que se salga del modo de configuración.
+
+\subsection{Modos de vuelo.}
+
+Los modos de vuelo programados en el Radio Control son los que utilizamos en las pruebas de vuelo. Como comentario inicial, la palanca del Throttle (Palanca izquierda del control)  siempre debe coincidir que esté completamente hacia abajo, la otra palanca se mantiene en su lugar.
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{imagenes/ctr3}
+	\end{minipage}
+	\hspace{0.05\textwidth} % Espacio entre las dos imágenes
+	\begin{minipage}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1.1\textwidth]{imagenes/mp1}
+	\end{minipage}
+	\caption{Inicio del primer modo de vuelo, modo “Stabilize”.}
+	\label{fig:modo_stabilize}
+\end{figure}
+\newpage
+En el primer modo de vuelo, lo llamaremos “Stabilize”, es el modo con las lengüetas (A, B, C y D) están totalmente hacia arriba, es el modo en que podemos controlar al Dron de una forma completamente manual y la primera parte para empezar el vuelo automático.
+El modo de vuelo en automático se establece cuando la lengüeta B se baja en su totalidad.
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{imagenes/ctr4}
+	\end{minipage}
+	\hspace{0.05\textwidth} % Espacio entre las dos imágenes
+	\begin{minipage}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1.1\textwidth]{imagenes/mp2}
+	\end{minipage}
+	\caption{Modo de vuelo “Auto”.}
+	\label{fig:modo_stabilize}
+\end{figure}
+
+
+Para empezar el modo de vuelo automático, se sigue el siguiente procedimiento:
+\begin{enumerate}
+	\item Primero, subimos el plan de vuelo al Dron.
+	\item Poner el control en modo Stabilize.
+	\item Se arma el Dron, este paso movemos la palanca del Throttle totalmente hacia abajo y la movemos a la derecha, es importante notar que las calibraciones y el botón de seguridad del Dron debe estar desactivado.
+	
+	\begin{figure}[H]
+		\centering
+		\begin{minipage}[b]{0.4\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{imagenes/ctr5}
+		\end{minipage}
+		\hspace{0.05\textwidth} % Espacio entre las dos imágenes
+		\begin{minipage}[b]{0.5\textwidth}
+			\centering
+			\includegraphics[width=1.1\textwidth]{imagenes/mp3}
+		\end{minipage}
+		\caption{Armado del Dron con la palanca del Throttle.}
+		\label{fig:modo_stabilize}
+	\end{figure}
+	\item Una vez armado el Dron, se pone en modo Auto y se levanta ligeramente la palanca del Throttle y el plan de vuelo comienza a ejecutarse.
+\end{enumerate}
+
+Por último, contamos con el modo de vuelo de \textit{“Land”}, este modo es únicamente para el aterrizaje del Dron. Para colocar el Dron en este modo, pasamos del modo Auto al modo Land, bajamos la lengüeta B y seguido subimos la lengüeta A.
+
+	\begin{figure}[H]
+	\centering
+	\begin{minipage}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{imagenes/ctr6}
+	\end{minipage}
+	\hspace{0.05\textwidth} % Espacio entre las dos imágenes
+	\begin{minipage}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1.1\textwidth]{imagenes/mp4}
+	\end{minipage}
+	\caption{Modo de vuelo “Land”.}
+	\label{fig:modo_stabilize}
+\end{figure}
+
+El Dron empezará a aterrizar en la posición en que se encuentra.
+Para las pruebas que hicimos, se presentaban problemas de lectura con el GPS externo del Dron, por lo que perdía su posición y en muchos casos el Dron hacía un aterrizaje forzado y algunos componentes presentaban descomposturas, por eso, al momento de hacer las pruebas de vuelo, el piloto debe estar atento a los movimientos del Dron en caso de alguna pérdida de lectura del GPS o cambios de velocidad del viento bruscos.
+
+Para controlar que el Dron tenga un buen aterrizaje en caso de alguna falla sin causar daños, tenemos dos opciones de aterrizaje.
+
+\begin{enumerate}
+	\item \textbf{Opción de aterrizaje por modo Land:} Es mover el modo de vuelo de \textit{Stabilize} \textrightarrow \textit{Land} o de \textit{Auto} \textrightarrow \textit{Land}, ajustando la palanca del movimiento (Palanca de la Derecha del Control) para evitar la colisión con algún objeto.
+	\item  \textbf{Opción de vuelo Manual:} Esta opción es poco recomendada, la opción aplica del modo \textit{Land} \textrightarrow \textit{Stabilize} o del modo \textit{Auto} \textrightarrow \textit{Stabilize}, el piloto toma el control total del Dron, lo que implica tener un excelente control con las palancas de Throttle y de Movimiento, ya que si la palanca de Throttle está totalmente hacia abajo, los motores se apagan y el Dron caerá, por lo que se tiene que tener en una posición adecuada la palanca del Throttle para hacer un descenso lento y controlado.
+\end{enumerate}
+
+En cualquier caso, el piloto debe contar con experiencia con el control manual y el control automático del Dron.
+
+\subsection{Planes de Vuelo.}
+
+Los planes de vuelo se personalizan desde la pestaña en Plan.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{imagenes/pv1}
+	\caption{Pestaña de creación de los planes de vuelo.}
+	\label{fig:pv1}
+\end{figure}
+
+En la derecha del panel encontramos las opciones de guardar y cargar los planes de vuelo, así como de leer el plan que tiene el Dron y mandarlo a la Memoria del Dron.
+
+Las órdenes que más comúnmente usamos son las siguientes:
+
+\begin{itemize}
+	\item Land: Para aterrizaje.
+	\item Takeoff: Para despegue del Dron, contiene el parámetro de altura.
+	\item Waypoint: El waypoint es un punto al cual queremos que se dirija el Dron, contiene un parámetro para el tiempo de espera dentro del waypoint y la altitud que debe tomar el Dron llegado al punto.
+	\item Conditional Yaw: Esta instrucción hace que el Dron gire y se perfile con respecto al norte geográfico, esta opción la colocamos siempre después de la instrucción de takeoff y waypoints para mantener el Dron apuntando hacia el norte.
+	
+\end{itemize}
+
+Hay más acciones que se pueden tomar para los planes de vuelo para poder hacer más experimentos y observar su comportamiento. Una vez creado el plan de vuelo, el Dron debe estar conectado a través de la telemetría al software de Mission Planner, pulsamos el botón de Write, y el plan estará listo para ejecutarse.
+
+\subsection{Condiciones climatológicas.}
+Para tener en cuenta un plan de vuelo, se deben tener las siguientes consideraciones climáticas:
+\begin{itemize}
+	\item Viento: Se recomienda según blogs [3] tener una velocidad de entre 10 mph a 15 mph, lo que es equivalente de 16 $km/h$ a 24 $km/h$.
+	\item Precipitación: Debemos planear el vuelo con nula precipitación o una probabilidad menor o igual al 40\%, según recomendaciones de la aplicación \textit{“UAV Forecast”.}
+	\item Cantidad de satélites disponibles: Como recomendación por la misma aplicación UAV Forecast, se recomiendan un mínimo de 8 satélites GPS, incluyendo los satélites GLONASS.
+\end{itemize}
+
+
+\begin{figure}[htbp]
+	\centering
+	\begin{minipage}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{imagenes/app1}
+		\caption*{Inicio de la aplicación.}
+	\end{minipage}
+	\hspace{0.02\textwidth} % Espacio entre las imágenes
+	\begin{minipage}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{imagenes/app2}
+		\caption*{Probabilidad de precipitación}
+	\end{minipage}
+	\hspace{0.02\textwidth} % Espacio entre las imágenes
+	\begin{minipage}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{imagenes/app3}
+		\caption*{Cantidad de satélites visibles}
+	\end{minipage}
+	\caption{Aplicación de ayuda para condiciones de vuelo}
+	\label{fig:flight_conditions_app}
+\end{figure}
+
+Una vez comprobadas las condiciones climáticas apropiadas para el vuelo, se puede proceder a crear el plan de vuelo y a ejecutarlo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \section{Implementación de la WSN}
 \subsection{Adquisición de los Elementos}
 En esta etapa, se procederá con la adquisición de los elementos esenciales para la implementación de la WSN, basándonos en las selecciones detalladas durante el análisis y diseño del proyecto:
@@ -414,7 +791,6 @@ A continuación, se muestran las imágenes de los elementos adquiridos para la i
         \end{minipage}
     \end{minipage}
 \end{figure} 
-
 
 \begin{figure}[H]
 \begin{minipage}{\textwidth}
@@ -1135,10 +1511,11 @@ Estos resultados ofrecen una visión detallada de cómo cambia el rendimiento de
 \section{Creación de la página Web}
 Para esta tarea la estamos dividiendo en varias partes, empezaremos describiendo la arquitectura final para el proyecto junto con todas las configuraciones necesarias para “levantar” el servicio en la nube.
 \begin{figure}[H]
-    \centering
-%    \includegraphics[width=\textwidth]{imagenes/}
-    \caption{Diagrama de arquitectura del subsistema de almacenamiento.}
-    \label{diagrama-almacenamiento}
+	\centering
+	
+	\label{fig:arquesub}
+	\includegraphics[width=1\linewidth]{imagenes/arque_sub}
+	\caption{Diagrama de arquitectura del subsistema de almacenamiento.}
 \end{figure}
 
 \noindent La creación de la Aplicación Web consta de varios módulos que se muestran en el diagrama de la Figura \ref{diagrama-almacenamiento}. La aplicación web se va a construir con AWS Amplify que nos ayudará a crear el sitio y todo lo que requerido para la administración y configuración de la página web, Amplify trabaja con el framework de React para el desarrollo de toda la configuración FrontEnd y BackEnd y toda la información se almacenará en el \textit{Hosting Bucket}, también, se contará con un Bucket para almacenar toda la información multimedia requerida. Debido a la necesidad de contar con seguridad para que no cualquier persona pueda editar y visualizar los datos, se hace uso del servicio de Cognito, el cual dará acceso a toda la información de la aplicación web.
@@ -1150,27 +1527,31 @@ Una VTL (Velocity Template Language) que son un conjunto de plantillas que otorg
 
 \noindent \textbf{\large Seguridad y Permisos} \newline
 En la primera parte se crean dos usuarios en donde se le otorgan los permisos de administrador.
+
 \begin{figure}[H]
-    \centering
-%    \includegraphics[width=\textwidth]{imagenes/}
-    \caption{Creación de los usuarios administradores.}
+	\centering
+	\includegraphics[width=1\linewidth]{imagenes/seguridad_permisos}
+	\caption{Creación de los usuarios administradores.}
+	\label{fig:seguridadpermisos}
 \end{figure}
 
 \noindent Una vez que creados los usuarios, se procede a dirigirse al IDE VisualStudio Code y añadimos seguridad al Bucket, para esto , en la consola del IDE  se coloca el comando: \textit{amplify add auth}
 \newline
 Con ese comando, se elegirá la autenticación deseada y se añadirá la autenticación por email.
 \begin{figure}[H]
-    \centering
-%    \includegraphics[width=\textwidth]{imagenes/}
-    \caption{Configuración por usuario y contraseña.}
+	\centering
+	\includegraphics{imagenes/add_auth}
+	\caption{Configuración por usuario y contraseña.}
+	\label{fig:addauth}
 \end{figure}
 
  \noindent \textbf{\large Creación del S3 Bucket para los archivos multimedia} \newline
 Se utiliza el siguiente comando para añadir almacenamiento a al servicio: \textit{amplify add storage}.
 \begin{figure}[H]
-    \centering
-%    \includegraphics[width=\textwidth]{imagenes/}
-    \caption{Configuración del servicio de almacenamiento.}
+	\centering
+	\includegraphics[width=1\linewidth]{imagenes/addStorage}
+	\caption{Configuración del servicio de almacenamiento.}
+	\label{fig:addstorage}
 \end{figure}
 \noindent Con el comando de añadir almacenamiento, se indica que se pueden contener imágenes, audios, videos y cualquier archivo que se desee almacenar. Además, se configura para que tanto los miembros autenticados como los visitantes puedan visualizar la información. La diferencia es que los miembros, que serán añadidos a un grupo con reglas específicas, podrán crear, actualizar, leer y eliminar los datos, mientras que los usuarios invitados únicamente podrán ver la información.
 
@@ -1178,34 +1559,35 @@ Se utiliza el siguiente comando para añadir almacenamiento a al servicio: \text
 } \newline
 Las funciones Lambda ayudarán a automatizar los procesos de almacenamiento en la base de datos de DynamoDB y a almacenar archivos en el Bucket. Para crear una función Lambda, se utiliza el siguiente comando: \textit{amplify add function}.
 \begin{figure}[H]
-    \centering
-%    \includegraphics[width=\textwidth]{imagenes/}
-    \caption{Creación de funciones Lambda.}
+	\centering
+	\includegraphics[width=1\linewidth]{imagenes/add_function}
+	\caption{Creación de funciones Lambda.}
+	\label{fig:addfunction}
 \end{figure}
 
  \noindent \textbf{\large Añadiendo GraphQL API} \newline
 El servicio de GraphQL API permite al FrontEnd comunicarse con el BackEnd. Con el siguiente código: \textit{amplify add api}.
 \begin{figure}[H]
     \centering
-%    \includegraphics[width=\textwidth]{imagenes/}
+    \includegraphics[width=\textwidth]{imagenes/add_API}
     \caption{Creación del GraphQL.}
 \end{figure}
 Una vez que se haya creado toda la lógica y se haya completado la arquitectura, los archivos se subirán utilizando el comando: \textit{amplify push}.
 \begin{figure}[H]
     \centering
-%    \includegraphics[width=\textwidth]{imagenes/}
+    \includegraphics[width=\textwidth]{imagenes/created_files}
     \caption{Archivos que se crearán.}
 \end{figure}
 \begin{figure}[H]
     \centering
-%    \includegraphics[width=\textwidth]{imagenes/}
+    \includegraphics[width=\textwidth]{imagenes/opt}
     \caption{Opciones para creación automatizada de código.}
 \end{figure}
 
  \noindent \textbf{\large Base de Datos} \newline
 Los datos que se almacenará en la base de datos son:
 \begin{itemize}
-    \item \textbf{ID:} !ID
+    \item \textbf{ID:} ID!
     \item \textbf{Tipo de archivo:} String
     \item \textbf{Fecha de captura del archivo:} String
     \item \textbf{Fecha de subida del archivo:} String
@@ -1218,19 +1600,247 @@ Los datos que se almacenará en la base de datos son:
 La página web tendrá el siguiente diseño:
 \begin{figure}[H]
     \centering
-%    \includegraphics[width=\textwidth]{imagenes/}
+    \includegraphics[width=0.9\textwidth]{imagenes/loggin}
     \caption{Inicio de sesión.}
 \end{figure}
 \begin{figure}[H]
     \centering
-%    \includegraphics[width=\textwidth]{imagenes/}
+    \includegraphics[width=.9\textwidth]{imagenes/index}
     \caption{Pestaña de Inicio.}
 \end{figure}
 \begin{figure}[H]
     \centering
-%    \includegraphics[width=\textwidth]{imagenes/}
+    \includegraphics[width=.9\textwidth]{imagenes/files}
     \caption{Pestaña de Visualización de archivos.}
 \end{figure}
+
+\section{Integración de la página web.}
+
+El prototipo de la aplicación Web se hizo bajo el framework de React, junto TypeScript, NodeJS y varías bibliotecas de diseño como lo son React Bootstrap, 
+Para empezar la integración de todos los componentes de BackEnd, FrontEnd y Base de Datos, hacemos uso de una herramienta que nos ayuda demasiado para el desarrollo web, que se encarga principalmente de hacer las configuraciones de conectividad entre autorización (inicios de sesión por registro en la aplicación), base de datos NoSQL como lo es DynamoDB, el almacenamiento en un Bucket de S3 y gestiona todo el BackEnd para la conectividad entre estos servicios, también nos da una forma de “Hosting” de la aplicación web.
+Gen 2 es la herramienta que utilizamos a lo largo del proyecto, ya que para comenzar a utilizar el servicio, únicamente debemos clonar la plantilla que nos aparece en la página de inicio para utilizar Amplify Gen 2 [1] que está basado totalmente en TypeScript y una biblioteca de diseños[2] para tener una estética de la página agradable al usuario 
+La página de inicio de Amplify nos ofrece una plantilla con la integración de seguridad (autenticación), conexión con el sitio web, almacenamiento y base de datos; se comienza con una aplicación sencilla de una lista de tareas, la cual tenemos que eliminar y empezar a construir nuestro sitio web, únicamente incluyendo nuestros comandos para la implementación de los servicios, los cuales iremos describiendo en el proceso.
+Para la Base de Datos, se modificó las tablas que contienen la información, las cuales cuentan con:
+
+\begin{itemize}
+	\item Se le configura la dirección en donde se almacena el archivo subido.
+\item 	El nombre de quién lo subió.
+	\item La descripción, en este espacio se recomienda describir todos los datos importantes, sobre la zona en la que se ubicó la camara, algunas anotaciones y observaciones o algún tipo de información relevante sobre el archivo que se va a subir.
+	\item Por defecto, la base de datos ya cuenta con 2 campos interesantes que aprovechamos y nos son de mucha ayuda, que es la parte de creación (upload) del archivo y de modificación del archivo.
+\end{itemize}
+Esta información se envía y recibe con los siguientes comandos respectivamente:
+
+
+\textit{client.models.function.create({...})}
+\textit{client.models.function.list();}
+
+La función list nos arroja todos los datos en formato .JSON.
+Para el almacenamiento en S3, se tiene que seguir una serie de pasos, ya que por defecto, no viene con esta función. Para crear el almacenamiento, en la siguiente dirección de archivos dentro del proyecto \textbf{amplify/storage/resource.ts}, vamos a añadir las líneas de código para el almacenamiento.
+
+\textit{import { defineStorage } from '@aws-amplify/backend';
+export const storage = defineStorage({
+	name: 'amplifyTeamDrive'
+});}
+
+Importamos la biblioteca del backend y nombramos nuestro Bucket. En el directorio\textbf{ amplify/backend.ts}, añadiremos únicamente la línea de “\textit{Storage}” y ya tendríamos nuestro almacenamiento creado.
+Cabe recalcar el hecho de que, una vez configurado nuestro FrontEnd junto con los comandos de integración de los servicios ya mencionados, nuestro proyecto se sube en el repositorio de GitHub, Amplify tiene la gran facilidad de que cuando detecta los cambios de con el comando “push”, este automaticamente empieza la implementación de todos los servicios que le administramos a toda nuestra lógica, por lo que no hay que configurar nada más.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{imagenes/test1}
+	\caption{Pruebas de almacenamiento de la base de datos.}
+	\label{fig:test1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{imagenes/test2}
+	\caption{Pruebas de almacenamiento de la base de datos.}
+	\label{fig:test1}
+\end{figure}
+
+\subsection{Trabajo futuro.}
+
+Aunque la aplicación es muy sencilla y funcional, hay mucho trabajo a futuro sobre el rediseño de los módulos que implementamos, así como mayor diseño y uso de las librerías; la parte de autorización también es un tema muy complejo y completo que se le debe tomar mucha importancia, para este proyecto únicamente se toman las medidas de seguridad básicas, que es aplicar un login con usuario y contraseña, sin embargo, se planea modificar todo el inicio de sesión y modificación de información de los usuarios y la personalización de los mismos.
+
+Agregar más módulos y servicios a este proyecto también queda como proyecto a futuro, ya que AWS cuenta con una gran cantidad de servicios que puede ayudar a los expertos en biología a realizar con facilidad sus estudios, recordando que este proyecto se enfrasca en un peldaño para el desarrollo de tecnología en el ámbito de monitoreo animal.
+
+\section{Integración de los Elementos}
+
+Después de haber verificado el funcionamiento de los componentes de manera individual se
+llevará a cabo su integración. Explorando cómo almacenar los datos de temperatura y GPS en una tarjeta SD para su posterior análisis y cómo utilizar la tecnología LoRa para la transmisión eficiente de estos datos entre nodos de la red. A través de estos procesos de integración, se espera obtener una red de sensores completamente funcional y lista para su despliegue en el campo.
+\begin{itemize}
+	\item \textbf{Almacenamiento de datos de temperatura en la tarjeta MicroSD:} Se almacenan los datos recopilados por el sensor de temperatura en la tarjeta MicroSD, mediante la conversión de los valores analógicos obtenidos del termistor a grados Celsius y guardándolos junto con una marca de tiempo en un archivo de texto en la tarjeta MicroSD, además se muestran estos datos en el Monitor Serial.
+	El código realizado comienza inicializando la comunicación serial y configurando un pin para alimentar el termistor directamente, ya que el pin de VCC será utilizado para alimentar el módulo adaptador MicroSD, también se le configura el chip select y se conectan los demás pines como en se vio en el Funcionamiento de los Elementos. Después, se inicializa la tarjeta MicroSD y se borra el archivo de temperatura en caso de ya existir. 
+	En el bucle principal, se lee el valor analógico del termistor, se convierte a temperatura en grados Celsius y se obtiene la marca de tiempo en formato HH:MM:SS iniciando desde el encendido del Arduino utilizando la función millis() de la librería TimeLib. Esta información se muestra en el Monitor Serial y se guarda en un archivo de texto en la tarjeta MicroSD en el siguiente formato: "temperatura; hora".
+	\begin{figure}[H]
+		\centering
+		\subfigure[) Monitor Serial.]{\includegraphics[width=0.45\textwidth]{imagenes/data1}}
+		\quad
+		\subfigure[) Archivo de texto.]{\includegraphics[width=0.45\textwidth]{imagenes/data2}}
+		\caption{ Resultados de guardar la temperatura en la memoria MicroSD.}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{imagenes/circuito1}
+		\caption{Integración del termistor y el módulo adaptador MicroSD.}
+		\label{fig:circuito1}
+	\end{figure}
+	
+	
+	\item \textbf{Almacenamiento de datos GPS en la tarjeta MicroSD:} Se registran las coordenadas GPS en un archivo de texto en la tarjeta MicroSD utilizando un Arduino y un módulo GPS. Las coordenadas se registran junto con la hora actual en formato HH:MM:SS ajustada para la Ciudad de México (GMT-6).
+	El código comienza inicializando la comunicación serial con el módulo GPS utilizando una comunicación de software serial a través de los pines RX y TX del Arduino. Luego, se configura la velocidad de comunicación del módulo GPS y se inicializa la tarjeta MicroSD.
+	En el bucle principal, se lee continuamente la información del módulo GPS. Cuando se recibe un mensaje que comienza con "\$ GPRMC"(el mensaje de datos mínimos recomendados de GPS), se procesa para extraer la hora actual, la latitud y la longitud. Estos datos se convierten a formato decimal y se ajusta la hora al huso horario de la Ciudad de México (GMT-6).
+	Luego, se crea una cadena con los datos de coordenadas y hora en el formato "latitud, longitud ; hora". Esta cadena se imprime en el Monitor Serial y se guarda en el archivo de texto en la tarjeta MicroSD.
+	\begin{figure}[H]
+		\centering
+		\subfigure[) Monitor Serial.]{\includegraphics[width=0.45\textwidth]{imagenes/data3}}
+		\quad
+		\subfigure[) Archivo de texto.]{\includegraphics[width=0.3\textwidth]{imagenes/data4}}
+		\caption{ Resultados de guardar la temperatura en la memoria MicroSD.}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{imagenes/circuito2}
+		\caption{Integración del GPS y el módulo adaptador MicroSD.}
+		\label{fig:circuito1}
+	\end{figure}
+	
+	\item \textbf{Transmisión de archivos desde la tarjeta MicroSD mediante LoRa:} Este proyecto realiza un intercambio de archivos de texto entre dispositivos usando un Arduino Pro Micro, un módulo adaptador MicroSD y un módulo LoRa E22. El archivo de texto recibido se almacena en una tarjeta MicroSD y el usuario puede interactuar con el sistema mediante un menú en el monitor serial.
+	El menú permite al usuario seleccionar entre diferentes opciones: escribir en el archivo, leer el archivo, borrar el contenido del archivo y enviar el archivo por LoRa. Dependiendo de la opción seleccionada, se ejecuta la función correspondiente.
+	Durante la ejecución, el programa verifica continuamente si hay datos disponibles en el módulo LoRa. Si hay datos disponibles, estos se reciben y se almacenan en una variable. Los datos recibidos se muestran en el Monitor Serial para que el usuario pueda ver lo que se ha recibido y se guardan en un archivo txt en la tarjeta MicroSD. Si ocurre un error al intentar abrir el archivo, se notifica al usuario.
+	Por otra parte, para enviar el contenido del archivo, primeramente, se abre el archivo, después se guardan los datos en una variable y se envían a través del módulo LoRa. De igual forma , se notifica al usuario sobre el éxito o el fracaso del envío.
+	
+	\begin{figure}[H]
+		\centering
+		\subfigure[) Escribir en el archivo.]{\includegraphics[width=0.45\textwidth]{imagenes/data5}}
+		\quad
+		\subfigure[) Transmitir archivo.]{\includegraphics[width=0.45\textwidth]{imagenes/data6}}
+		\quad
+		\subfigure[) Leer archivo.]{\includegraphics[width=0.45\textwidth]{imagenes/data7}}
+		\quad
+		\subfigure[) Archivo de texto recibido.]{\includegraphics[width=0.45\textwidth]{imagenes/data8}}
+		\caption{ Resultados de transmitir el archivo txt de la memoria MicroSD usando LoRa.}
+	\end{figure}
+	
+		\begin{figure}[H]
+		\centering
+		\subfigure[) Transmisor.]{\includegraphics[width=0.45\textwidth]{imagenes/circuito3}}
+		\quad
+		\subfigure[) Receptor.]{\includegraphics[width=0.45\textwidth]{imagenes/circuito4}}
+		\caption{ Integración del módulo adaptador MicroSD y el transceptor LoRa.}
+	\end{figure}
+	\item \textbf{Almacenamiento de datos GPS en la tarjeta MicroSD con transmisión mediante LoRa:} Este proyecto permite registrar coordenadas GPS en una tarjeta MicroSD y transmitir estos datos a través de una transceptores LoRa. Utiliza un Arduino, un módulo GPS, un módulo adaptador MicroSD y un módulo LoRa E22 para realizar estas tareas.
+	El sistema comienza con la inicialización de la tarjeta MicroSD. Si la tarjeta no se inicializa correctamente, se notifica al usuario y el programa se detiene. A continuación, se configura el módulo GPS para comunicarse a través de una conexión serial, ajustando la velocidad de comunicación del módulo GPS NEO-6M. Posteriormente, se inicializa el módulo LoRa E22, preparándolo para la transmisión de datos. 
+	El módulo GPS se utiliza para recibir datos de ubicación en formato NMEA, que incluye información sobre la latitud, longitud y hora. Estos datos se procesan para extraer las coordenadas y la hora actual, convirtiendo las coordenadas a un formato decimal y ajustando la hora al huso horario de la Ciudad de México (GMT-6).
+	Las coordenadas GPS y la hora se guardan en un archivo de texto en la tarjeta MicroSD, actualizándose cada vez que se reciben nuevos datos GPS. El sistema abre el archivo en modo de escritura, guarda los datos y luego cierra el archivo para asegurar que la información se almacene correctamente.
+	Después, se define un intervalo de tiempo en el que se estarán guardando las coordenadas en la tarjeta y concluyendo este tiempo se iniciará la transmisión del archivo. Donde se lee el contenido del archivo y se envía a través del módulo LoRa. La transmisión se realiza en varios pasos: primero se envía un mensaje de inicio, seguido del nombre del archivo y luego cada línea de datos. Finalmente, se envía un mensaje de finalización para indicar que la transmisión ha terminado. Si la transmisión es exitosa, el archivo en la tarjeta MicroSD se borra para preparar el sistema para la próxima serie de datos.
+	Aunque el sistema opera principalmente de forma autónoma, la comunicación con el
+	usuario se realiza a través del Monitor Serial. El usuario puede ver mensajes que indican el estado de la inicialización, la lectura de datos, el almacenamiento y la transmisión.
+	Ilustrando así cómo integrar múltiples tecnologías (GPS, MicroSD y LoRa) para crear un sistema de registro y transmisión de datos eficiente, ideal para aplicaciones que requieren seguimiento de ubicación y comunicación inalámbrica.
+	
+\begin{figure}[H]
+	\centering
+	\begin{minipage}[b]{0.65\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{imagenes/data9}
+		\caption*{(a) Transmisor}
+	\end{minipage}
+	\quad
+	\begin{minipage}[b]{0.65\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{imagenes/data10}
+		\caption*{(b) Receptor}
+	\end{minipage}
+	\caption{Resultados de guardar las coordenadas en un archivo txt en la memoria MicroSD y transmitirlo usando LoRa.}
+	\label{fig:transmission_results}
+\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\subfigure[) Transmisor.]{\includegraphics[width=0.45\textwidth]{imagenes/circuito5}}
+		\quad
+		\subfigure[) Receptor.]{\includegraphics[width=0.45\textwidth]{imagenes/circuito6}}
+		\caption{ Integración del GPS, el módulo adaptador MicroSD y el transceptor LoRa.}
+	\end{figure}
+	
+	\item \textbf{Recepción y almacenamiento de datos GPS mediante LoRa junto con datos de temperatura en la tarjeta MicroSD:} En este proyecto, se establece el sistema de recepción de datos GPS mediante LoRa, el cual almacena estos datos recibidos en una tarjeta MicroSD con el nombre de archivo recibido, a la par que almacena datos de temperatura. Utilizando un Arduino Pro Micro, un módulo GPS, un termistor, un módulo LoRa E22 y una tarjeta MicroSD.
+	Al iniciar, el sistema configura y alimenta el termistor, el módulo LoRa, y la tarjeta MicroSD. Si la inicialización del dispositivo de almacenamiento falla, se notifica al usuario y se detiene la ejecución para evitar errores posteriores. Una vez que todo está configurado correctamente, el sistema entra en el bucle principal donde se ejecutan dos tareas principales: la lectura y almacenamiento de la temperatura, y la recepción de archivos a través de LoRa.
+	La primera tarea es la lectura de la temperatura. El sistema lee el valor analógico del termistor, convierte este valor a grados Celsius, y obtiene la hora actual utilizando la librería TimeLib. La temperatura y la hora se imprimen en el Monitor Serial y se almacenan en un archivo en la tarjeta MicroSD. Este proceso se repite cada intervalo de tiempo establecido, proporcionando un registro continuo de la temperatura ambiental.
+	La segunda tarea es la recepción de archivos a través de LoRa. El sistema espera mensajes del módulo LoRa, y cuando recibe un mensaje de inicio ("START"), procede a recibir el nombre del archivo. Una vez recibido el nombre, se crea y abre un archivo con ese nombre en la tarjeta MicroSD y se empiezan a recibir los datos del archivo. Los datos se almacenan línea por línea hasta que se recibe un mensaje de finalización ("END"). Si hay algún error en la recepción de los mensajes o al abrir el archivo, se notifica al transmisor para que no borre el archivo transmitido.
+	Combinando de esta forma, la recepción de datos GPS mediante LoRa con el almacenamiento de datos de temperatura en una tarjeta MicroSD. Utilizando tecnologías de comunicación inalámbrica y almacenamiento digital, se crea una solución robusta para la recopilación y registro de datos ambientales y de ubicación, adecuada para diversas aplicaciones en monitoreo remoto y seguimiento de activos.
+	
+	\begin{figure}[H]
+		\centering
+		\begin{minipage}[b]{0.65\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{imagenes/data11}
+			\caption*{(a) Monitor serial.}
+		\end{minipage}
+		\quad
+		\begin{minipage}[b]{0.65\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{imagenes/data12}
+			\caption*{(b) Archivos generados.}
+		\end{minipage}
+		\caption{Resultados de recibir las coordenadas usando LoRa, guardarlo en un archivo
+			txt en la memoria MicroSD y recolectar datos de temperatura a la par}
+		\label{fig:transmission_results}
+	\end{figure}
+	
+		\begin{figure}[H]
+		\centering
+		\subfigure[) Transmisor.]{\includegraphics[width=0.45\textwidth]{imagenes/circuito4}}
+		\quad
+		\subfigure[) Receptor.]{\includegraphics[width=0.45\textwidth]{imagenes/circuito7}}
+		\caption{ Integración del GPS, el termistor, el módulo adaptador MicroSD y el
+			transceptor LoRa}
+	\end{figure}
+	
+	\item \textbf{Transmisión de datos GPS y de temperatura de la tarjeta MicroSD mediante LoRa:} 
+	En este proyecto, se establece un sistema para la transmisión de datos GPS y de temperatura contenidos en archivos de texto en una tarjeta MicroSD utilizando la tecnología LoRa. El sistema está compuesto por un Arduino Pro Micro, un termistor, un módulo LoRa E22, y una tarjeta MicroSD. La función principal es enviar los datos almacenados en la tarjeta MicroSD a través del módulo LoRa a un receptor remoto.
+	
+	El programa comienza con la configuración inicial de los componentes. Se configuran los pines del módulo LoRa y de la tarjeta MicroSD. El módulo LoRa es configurado utilizando la biblioteca LoRa\_E22, y la tarjeta MicroSD es inicializada utilizando la biblioteca SD. Si la tarjeta no se inicializa correctamente, se notifica al usuario y el programa se detiene para evitar errores posteriores.
+	
+	En el bucle principal, el sistema opera en tres modos principales de operación: recepción de archivos GPS por LoRa, medición y almacenamiento de temperatura, y transmisión de archivos GPS y de temperatura. Respecto a la recepción por LoRa, el Arduino monitorea continuamente la disponibilidad de mensajes mediante el módulo LoRa. Cuando se detecta un mensaje de inicio (“START''), se inicia la recepción del archivo correspondiente. Esto implica la espera y recepción del nombre del archivo a través de LoRa, seguido por la recepción secuencial de cada línea de datos. Cada línea de datos recibida se guarda directamente en un archivo con su correspondiente nombre en la tarjeta MicroSD, repitiendo esto hasta recibir un mensaje de finalización (“END''). Notificando al transmisor si ocurrió algún error en la recepción de los datos para anular la eliminación del archivo en el transmisor. 
+	
+	Por otro lado, el Arduino también realiza mediciones periódicas de temperatura a intervalos regulares establecidos. Durante cada ciclo de medición, el termistor conectado se activa para obtener una lectura analógica que representa la temperatura ambiental. Esta lectura se convierte a grados Celsius y se complementa con la hora actual en formato HH:MM. Los datos de temperatura junto con la marca de tiempo se registran de manera sistemática en un archivo específico (temp.txt) en la tarjeta SD.
+	Además de la recepción y almacenamiento local de datos, lo agregado en este sistema es que también está diseñado para la transmisión periódica de sus archivos por LoRa cada cierto periodo de tiempo (mayor al de la medición de temperatura). Durante este proceso, el Arduino verifica la existencia de archivos predefinidos (gps1.txt, gps2.txt, gps3.txt y temp.txt) en la tarjeta MicroSD. Para cada archivo existente, se inicia una secuencia de transmisión por LoRa, comenzando con el envío del nombre del archivo y seguido por el envío de cada línea de datos de manera ordenada. Un mensaje “START'' indica el inicio de la transmisión y un mensaje “END'' señala su finalización exitosa. Después de completar una transmisión satisfactoria (recibiendo un mensaje de confirmación del receptor), el archivo correspondiente se elimina automáticamente de la tarjeta MicroSD para gestionar eficientemente el espacio de almacenamiento y garantizar la continuidad en la recolección de datos.
+	
+		\begin{figure}[H]
+		\centering
+		\begin{minipage}[b]{0.65\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{imagenes/data14}
+			\caption*{(a) Monitor serial.}
+		\end{minipage}
+		\quad
+		\begin{minipage}[b]{0.65\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{imagenes/data13}
+			\caption*{(b) Archivos generados.}
+		\end{minipage}
+		\caption{ Resultados de recibir las coordenadas usando LoRa, recolectar datos de temperatura y transmitir estos archivos txt.}
+		\label{fig:transmission_results}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\subfigure[) Transmisor.]{\includegraphics[width=0.45\textwidth]{imagenes/circuito5}}
+		\quad
+		\subfigure[) Receptor.]{\includegraphics[width=0.45\textwidth]{imagenes/circuito4}}
+		\caption{ Integración del GPS, el termistor, el módulo adaptador MicroSD y el
+			transceptor LoRa}
+	\end{figure}
+	
+\end{itemize}
+
+
+Con esta implementación integral de captura, almacenamiento local y transmisión remota de datos utilizando sensores, Arduinos, transceptores LoRa y tarjetas MicroSD, se concluye la configuración de la Red de Sensores Inalámbricos (WSN) propuesta para el monitoreo de especies en peligro de extinción. Este sistema no solo permite el registro en tiempo real de la temperatura ambiental y de coordenadas GPS, sino que también facilita la transmisión remota de datos a largas distancias. Esto garantiza el cumplimiento de las necesidades de monitoreo y conservación animal en entornos remotos y de difícil acceso.
+
+
 
 %%%%%%fin del archivo
 \endinput 
